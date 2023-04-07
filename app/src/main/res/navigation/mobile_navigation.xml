@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pqr.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_addstock"
+        android:name="com.pqr.myapplication.ui.Add.AddStockFragment"
+        android:label="Add Stock"
+        tools:layout="@layout/fragment_add_stock" />
+
+    <fragment
+        android:id="@+id/nav_removestock"
+        android:name="com.pqr.myapplication.ui.Remove.RemoveStockFragment"
+        android:label="Remove Stock"
+        tools:layout="@layout/fragment_remove_stock" />
+
+    <fragment
+        android:id="@+id/nav_Generatebill"
+        android:name="com.pqr.myapplication.ui.Bill.GenerateBillFragment"
+        android:label="Generate Bill"
+        tools:layout="@layout/fragment_generate_bill" />
+</navigation>

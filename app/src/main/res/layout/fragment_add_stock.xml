@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    tools:context=".ui.Add.AddStockFragment">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="44dp"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:text="Tablet Name"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_bcode"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="48dp"-->
+    <!--        android:text="Batch Code"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/tb_bcode"-->
+    <!--        app:layout_constraintHorizontal_bias="0.576"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/t_name" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_qty"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="Tab Qty"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/tb_qty"-->
+    <!--        app:layout_constraintHorizontal_bias="0.3"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/t_bcode" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_price"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="52dp"-->
+    <!--        android:layout_marginTop="36dp"-->
+    <!--        android:text="Price/Strep"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintHorizontal_bias="0.141"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/t_qty" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_exp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="52dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:text="Expiry Date"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/t_price" />-->
+
+    <AutoCompleteTextView
+        android:id="@+id/tb_name"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Tab Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tb_bcode"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Batch Code"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tb_qty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_name"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tb_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Tab qty"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tab_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_bcode"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tab_price"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Strep Price"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_qty" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tb_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="EXP"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_price" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="340dp"
+        android:onClick="sendData"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_exp"
+        app:layout_constraintVertical_bias="0.5"
+        app:toggleCheckedStateOnClick="false" />
+
+    <Button
+        android:id="@+id/view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
